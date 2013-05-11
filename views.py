@@ -24,7 +24,8 @@ class GPSHandler(BaseHandler):
         if lat and lon and owner:
             self.db.create_location(int(owner), lat, lon)
             self.write('success')
-        self.write('fail')
+        else:
+            self.write('fail')
 
 
 class MapHandler(BaseHandler):

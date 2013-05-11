@@ -27,7 +27,7 @@ def location_filter(locs):
         json_resp = urllib.urlopen(baidu_api_url%(baidu_key, it['lon'], it['lat'])).read()[29:-1]
         addr = addr_generator(json.loads(json_resp))
         t = time_generator(x['create_time'])
-
-        res.append((addr, t, it['lon'], it['lat']))
+        if not res or addr != res[-1][0]: 
+            res.append((addr, t, it['lon'], it['lat']))
     return res 
         
