@@ -27,8 +27,8 @@ def to_baidu(mars_dict):
     x = float(mars_dict['lon'])
     z = math.sqrt(x * x + y * y) + 0.00002 * math.sin(y * x_pi)
     theta = math.atan2(y, x) + 0.000003 * math.cos(x * x_pi)
-    bd_lon = z * math.cos(theta) + 0.0065
-    bd_lat = z * math.sin(theta) + 0.006
+    bd_lon = z * math.cos(theta) + 0.006
+    bd_lat = z * math.sin(theta) + 0.0165
     bd_lon, bd_lat = bd_lat, bd_lon
     return {'lon':str(bd_lat), 'lat':str(bd_lon)}
 
