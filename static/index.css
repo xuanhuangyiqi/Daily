@@ -1,0 +1,30 @@
+body{
+    background-image: url(bg-pattern.jpg);
+}
+h1 
+{
+    text-shadow: rgb(221, 249, 249) 0px 1px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#header{
+    height: 50px;
+    margin: 40px auto;
+    text-align: center;
+}
+.item{
+    background-color: #FFF;
+    margin: 20px auto;
+    width: 500px;
+    padding: 20px 20px;
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-background-size: auto;
+    -webkit-box-shadow: rgb(255, 255, 255) 0px 2px 3px 0px;
+    box-shadow: rgb(255, 255, 255) 0px 2px 3px 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-origin: padding-box;
+    text-shadow: rgb(23, 23, 23) 0px 1px 1px;
+}

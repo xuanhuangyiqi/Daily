@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Daily von Htedsv</title>
+        <link  rel="stylesheet" href="{{static}}index.css">
+        <script type="text/javascript"> 
+           
+        </script>
+    </head>
+
+    <body>
+        <div id="header">
+            <h1>Kleine Raum Von Mir</h1>
+        </div>
+        <div id="content">
+            {% for x in feeds %}
+            <div class="item">{{ x[1] }}在<a href="/map?lat={{ x[3] }}&lon={{ x[2] }}">{{ x[0] }}</a> </div>
+            
+            {% end %}
+        </div>
+
+    </body>
+</html>
